@@ -1,0 +1,80 @@
+2025-11-09 18:14:34 | INFO | __main__ | 
+======================================================================
+2025-11-09 18:14:34 | INFO | __main__ | 🤖 RSI-MA-ATR ML TRADING BOT v2.0
+2025-11-09 18:14:34 | INFO | __main__ | ======================================================================
+2025-11-09 18:14:34 | INFO | __main__ | Mode: COLLECT
+2025-11-09 18:14:34 | INFO | __main__ | Symbols: ['XAUUSD', 'EURUSD', 'GBPUSD', 'USDJPY', 'XAUEUR', 'AUDUSD']
+2025-11-09 18:14:34 | INFO | __main__ | 
+✅ FEATURES:
+2025-11-09 18:14:34 | INFO | __main__ |   • Modular architecture with clean separation
+2025-11-09 18:14:34 | INFO | __main__ |   • ML-filtered signal generation
+2025-11-09 18:14:34 | INFO | __main__ |   • ATR-based trailing stops
+2025-11-09 18:14:34 | INFO | __main__ |   • Comprehensive risk management
+2025-11-09 18:14:34 | INFO | __main__ |   • Daily loss limits and position tracking
+2025-11-09 18:14:34 | INFO | __main__ |   • CSV logging for analysis
+2025-11-09 18:14:34 | INFO | __main__ | ======================================================================
+
+2025-11-09 18:14:39 | INFO | DataCollector | Collecting data for 6 symbols...
+2025-11-09 18:14:39 | INFO | DataCollector | Collecting XAUUSD...
+2025-11-09 18:14:40 | INFO | DataCollector | Collected 2000 samples from XAUUSD
+2025-11-09 18:14:40 | INFO | DataCollector | Collecting EURUSD...
+2025-11-09 18:14:40 | INFO | DataCollector | Collected 2000 samples from EURUSD
+2025-11-09 18:14:40 | INFO | DataCollector | Collecting GBPUSD...
+2025-11-09 18:14:40 | INFO | DataCollector | Collected 2000 samples from GBPUSD
+2025-11-09 18:14:40 | INFO | DataCollector | Collecting USDJPY...
+2025-11-09 18:14:40 | INFO | DataCollector | Collected 2000 samples from USDJPY
+2025-11-09 18:14:40 | INFO | DataCollector | Collecting XAUEUR...
+2025-11-09 18:14:40 | INFO | DataCollector | Collected 2000 samples from XAUEUR
+2025-11-09 18:14:40 | INFO | DataCollector | Collecting AUDUSD...
+2025-11-09 18:14:41 | INFO | DataCollector | Collected 2000 samples from AUDUSD
+2025-11-09 18:14:41 | INFO | DataCollector | Appended 12000 samples to training_data.csv
+2025-11-09 18:15:10 | INFO | __main__ | 
+======================================================================
+2025-11-09 18:15:10 | INFO | __main__ | 🤖 RSI-MA-ATR ML TRADING BOT v2.0
+2025-11-09 18:15:10 | INFO | __main__ | ======================================================================
+2025-11-09 18:15:10 | INFO | __main__ | Mode: TRAIN
+2025-11-09 18:15:10 | INFO | __main__ | Symbols: ['XAUUSD', 'EURUSD', 'GBPUSD', 'USDJPY', 'XAUEUR', 'AUDUSD']
+2025-11-09 18:15:10 | INFO | __main__ | 
+✅ FEATURES:
+2025-11-09 18:15:10 | INFO | __main__ |   • Modular architecture with clean separation
+2025-11-09 18:15:10 | INFO | __main__ |   • ML-filtered signal generation
+2025-11-09 18:15:10 | INFO | __main__ |   • ATR-based trailing stops
+2025-11-09 18:15:10 | INFO | __main__ |   • Comprehensive risk management
+2025-11-09 18:15:10 | INFO | __main__ |   • Daily loss limits and position tracking
+2025-11-09 18:15:10 | INFO | __main__ |   • CSV logging for analysis
+2025-11-09 18:15:10 | INFO | __main__ | ======================================================================
+
+2025-11-09 18:15:10 | INFO | MLModelManager | Training models from training_data.csv
+2025-11-09 18:15:11 | INFO | MLModelManager | Total samples: 15882
+2025-11-09 18:15:11 | INFO | MLModelManager | Label distribution:
+label
+ 0    7044
+-1    5186
+ 1    3652
+Name: count, dtype: int64
+2025-11-09 18:15:15 | INFO | MLModelManager | 
+BUY Classifier Performance:
+2025-11-09 18:15:16 | INFO | MLModelManager | 
+              precision    recall  f1-score   support
+
+           0       0.98      0.89      0.93      2446
+           1       0.71      0.94      0.81       731
+
+    accuracy                           0.90      3177
+   macro avg       0.84      0.91      0.87      3177
+weighted avg       0.92      0.90      0.90      3177
+
+2025-11-09 18:15:21 | INFO | MLModelManager | 
+SELL Classifier Performance:
+2025-11-09 18:15:21 | INFO | MLModelManager | 
+              precision    recall  f1-score   support
+
+           0       0.96      0.86      0.91      2140
+           1       0.76      0.93      0.84      1037
+
+    accuracy                           0.88      3177
+   macro avg       0.86      0.89      0.87      3177
+weighted avg       0.90      0.88      0.88      3177
+
+2025-11-09 18:15:21 | INFO | MLModelManager | Saved classifiers to models\clf_signal.pkl
+2025-11-09 18:15:33 | INFO | MLModelManager | Saved lot regressor to models\reg_lot.pkl

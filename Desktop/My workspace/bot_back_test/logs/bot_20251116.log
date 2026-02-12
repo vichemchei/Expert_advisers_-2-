@@ -1,0 +1,593 @@
+2025-11-16 11:38:07 | INFO | __main__ | 
+======================================================================
+2025-11-16 11:38:07 | INFO | __main__ | 🤖 RSI-MA-ATR ML TRADING BOT v2.0.1 (DEBUGGED)
+2025-11-16 11:38:07 | INFO | __main__ | ======================================================================
+2025-11-16 11:38:07 | INFO | __main__ | Mode: LIVE
+2025-11-16 11:38:07 | INFO | __main__ | Symbols: ['XAUUSD', 'EURUSD', 'GBPUSD', 'XAGUSD', 'XAUEUR', 'AUDUSD']
+2025-11-16 11:38:07 | INFO | __main__ | ML Enabled: False
+2025-11-16 11:38:07 | INFO | __main__ | 
+✅ FEATURES:
+2025-11-16 11:38:07 | INFO | __main__ |   • Enhanced debug logging
+2025-11-16 11:38:07 | INFO | __main__ |   • Fixed ML result unpacking
+2025-11-16 11:38:07 | INFO | __main__ |   • Detailed signal generation logging
+2025-11-16 11:38:07 | INFO | __main__ |   • 24/7 trading hours for testing
+2025-11-16 11:38:07 | INFO | __main__ |   • Comprehensive error tracking
+2025-11-16 11:38:07 | INFO | __main__ | ======================================================================
+
+2025-11-16 11:38:07 | INFO | RSIMLTradingBot | [32m======================================================================[0m
+2025-11-16 11:38:07 | INFO | RSIMLTradingBot | [32mRSI-MA-ATR ML TRADING BOT STARTED[0m
+2025-11-16 11:38:07 | INFO | RSIMLTradingBot | [32mMode: LIVE[0m
+2025-11-16 11:38:07 | INFO | RSIMLTradingBot | [32m======================================================================[0m
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | [32mMT5 initialized successfully[0m
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | Account: 5042423095 | Balance: $264.09
+2025-11-16 11:38:19 | INFO | RiskManager | [32m[DAILY RESET] Starting balance: $264.09[0m
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | [33mML DISABLED - Using rule-based signals only[0m
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | Rebuilding trailing stops from existing positions...
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | No existing positions to rebuild
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | Symbols: ['XAUUSD', 'EURUSD', 'GBPUSD', 'XAGUSD', 'XAUEUR', 'AUDUSD']
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | Magic Number: 234000
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | Risk per trade: 1.0%
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | ML Threshold: 0.60
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | Trading Hours: [(10, 24)]
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | Current Hour: 11:00
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | 🔄 Cycle #1 - 2025-11-16 11:38:19
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:38:19 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:38:19 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:38:19 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:38:19 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:38:19 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:38:19 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:38:19 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:38:19 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:38:19 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:38:19 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:38:20 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:38:20 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:38:20 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:38:20 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:38:20 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | ✅ Cycle #1 complete. Sleeping 60s...
+2025-11-16 11:38:20 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 🔄 Cycle #2 - 2025-11-16 11:39:20
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:39:20 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:39:20 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:39:20 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:39:20 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:39:20 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:39:20 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:39:21 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:39:21 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:39:21 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:39:21 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:39:21 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:39:21 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:39:21 | INFO | RSIMLTradingBot | ✅ Cycle #2 complete. Sleeping 60s...
+2025-11-16 11:39:21 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🔄 Cycle #3 - 2025-11-16 11:40:21
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:40:21 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:40:21 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:40:21 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:40:21 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:40:21 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | ✅ Cycle #3 complete. Sleeping 60s...
+2025-11-16 11:40:21 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:41:21 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:41:21 | INFO | RSIMLTradingBot | 🔄 Cycle #4 - 2025-11-16 11:41:21
+2025-11-16 11:41:21 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:41:21 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:41:21 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:41:21 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:41:21 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:41:21 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:41:21 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:41:21 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:41:21 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:41:21 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:41:21 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:41:21 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:41:21 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:41:21 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:41:21 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:41:21 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:41:21 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:41:21 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:41:22 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:41:22 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:41:22 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:41:22 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:41:22 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:41:22 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:41:22 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:41:22 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:41:22 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:41:22 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | ✅ Cycle #4 complete. Sleeping 60s...
+2025-11-16 11:41:22 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | 🔄 Cycle #5 - 2025-11-16 11:42:22
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:42:22 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:42:22 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:42:22 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:42:22 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:42:23 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:42:23 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:42:23 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:42:23 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:42:23 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:42:23 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:42:23 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:42:23 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:42:23 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:42:23 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:42:23 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:42:23 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:42:23 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | ✅ Cycle #5 complete. Sleeping 60s...
+2025-11-16 11:42:23 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🔄 Cycle #6 - 2025-11-16 11:43:23
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:43:23 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:43:23 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:43:23 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:43:23 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:43:23 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | ✅ Cycle #6 complete. Sleeping 60s...
+2025-11-16 11:43:23 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:44:23 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:44:23 | INFO | RSIMLTradingBot | 🔄 Cycle #7 - 2025-11-16 11:44:23
+2025-11-16 11:44:23 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:44:23 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:44:23 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:44:24 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:44:24 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:44:24 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:44:24 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:44:24 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | ✅ Cycle #7 complete. Sleeping 60s...
+2025-11-16 11:44:24 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:45:24 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:45:24 | INFO | RSIMLTradingBot | 🔄 Cycle #8 - 2025-11-16 11:45:24
+2025-11-16 11:45:24 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:45:24 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:45:24 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:45:24 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:45:24 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:45:24 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:45:24 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:45:24 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:45:24 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:45:24 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:45:24 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:45:24 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:45:24 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:45:24 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:45:24 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:45:24 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:45:24 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:45:24 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:45:25 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:45:25 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:45:25 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:45:25 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:45:25 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:45:25 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:45:25 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:45:25 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:45:25 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:45:25 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | ✅ Cycle #8 complete. Sleeping 60s...
+2025-11-16 11:45:25 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 
+======================================================================
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 🔄 Cycle #9 - 2025-11-16 11:46:25
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUUSD...
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | --- Processing XAUUSD ---
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Technical State - RSI: 49.72, EMA_short: 4084.18237, EMA_long: 4088.03192, Price: 4085.05000, ATR: 3.78286
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Trend strength: 1.02 ATR
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   prev_high >= ema_short: 4085.28000 >= 4084.09104 = True
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   close < ema_short: 4085.05000 < 4084.18237 = False
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   RSI in range: 30 < 49.72 < 65 = True
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | XAUUSD: No rule-based signal
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 🔍 Analyzing EURUSD...
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | --- Processing EURUSD ---
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Technical State - RSI: 51.95, EMA_short: 1.16198, EMA_long: 1.16191, Price: 1.16201, ATR: 0.00027
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | EURUSD: No rule-based signal
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 🔍 Analyzing GBPUSD...
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | --- Processing GBPUSD ---
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Technical State - RSI: 58.08, EMA_short: 1.31692, EMA_long: 1.31650, Price: 1.31716, ATR: 0.00037
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Trend strength: 1.12 ATR
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Uptrend detected. Checking buy conditions...
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   prev_low <= ema_short: 1.31718 <= 1.31689 = False
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   close > ema_short: 1.31716 > 1.31692 = True
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   RSI in range: 35 < 58.08 < 70 = True
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | GBPUSD: No rule-based signal
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 🔍 Analyzing XAGUSD...
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | --- Processing XAGUSD ---
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Technical State - RSI: 39.53, EMA_short: 50.62941, EMA_long: 50.77894, Price: 50.54100, ATR: 0.06629
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Trend strength: 2.26 ATR
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   prev_high >= ema_short: 50.59600 >= 50.63872 = False
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   close < ema_short: 50.54100 < 50.62941 = True
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   RSI in range: 30 < 39.53 < 65 = True
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | XAGUSD: No rule-based signal
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 🔍 Analyzing XAUEUR...
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | --- Processing XAUEUR ---
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Technical State - RSI: 44.07, EMA_short: 3513.82112, EMA_long: 3517.81088, Price: 3511.23000, ATR: 3.52429
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Trend strength: 1.13 ATR
+2025-11-16 11:46:25 | DEBUG | SignalGenerator | Downtrend detected. Checking sell conditions...
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   prev_high >= ema_short: 3514.30000 >= 3514.09387 = True
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   close < ema_short: 3511.23000 < 3513.82112 = True
+2025-11-16 11:46:25 | DEBUG | SignalGenerator |   RSI in range: 30 < 44.07 < 65 = True
+2025-11-16 11:46:25 | INFO | SignalGenerator | [33m>>> SELL SIGNAL CONDITIONS MET <<<[0m
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | [36mML disabled - using rule signal with confidence=1.0[0m
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | [32m✅ [SIGNAL APPROVED] XAUEUR SELL | ML confidence: 1.000[0m
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | [33m>>> EXECUTING TRADE FOR XAUEUR <<<[0m
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | Lot size calculated: 0.01, SL distance: 5.28643, ML mult: 1.00
+2025-11-16 11:46:25 | ERROR | TradeExecutor | Order failed: Invalid stops
+2025-11-16 11:46:25 | INFO | RSIMLTradingBot | 🔍 Analyzing AUDUSD...
+2025-11-16 11:46:25 | DEBUG | RSIMLTradingBot | --- Processing AUDUSD ---
+2025-11-16 11:46:26 | DEBUG | SignalGenerator | Technical State - RSI: 38.29, EMA_short: 0.65361, EMA_long: 0.65366, Price: 0.65332, ATR: 0.00019
+2025-11-16 11:46:26 | DEBUG | SignalGenerator | Trend strength: 0.25 ATR
+2025-11-16 11:46:26 | DEBUG | SignalGenerator | Trend too weak (0.25 < 0.5 ATR)
+2025-11-16 11:46:26 | DEBUG | RSIMLTradingBot | AUDUSD: No rule-based signal
+2025-11-16 11:46:26 | INFO | RSIMLTradingBot | 🎯 Managing trailing stops...
+2025-11-16 11:46:26 | INFO | RSIMLTradingBot | ======================================================================
+2025-11-16 11:46:26 | INFO | RSIMLTradingBot | ✅ Cycle #9 complete. Sleeping 60s...
+2025-11-16 11:46:26 | INFO | RSIMLTradingBot | ======================================================================
+
+2025-11-16 11:46:36 | INFO | RSIMLTradingBot | [33mBot stopped by user[0m
+2025-11-16 11:46:36 | INFO | RSIMLTradingBot | MT5 connection closed
+2025-11-16 11:46:36 | INFO | RSIMLTradingBot | [31mBot shutdown complete[0m

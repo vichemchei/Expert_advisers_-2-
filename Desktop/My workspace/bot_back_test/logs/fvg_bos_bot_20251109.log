@@ -1,0 +1,54 @@
+2025-11-09 23:34:37 | INFO | FVGBOSTradingBot | [32m============================================================[0m
+2025-11-09 23:34:37 | INFO | FVGBOSTradingBot | [32mFVG-BOS TRADING BOT STARTED[0m
+2025-11-09 23:34:37 | INFO | FVGBOSTradingBot | [32m============================================================[0m
+2025-11-09 23:34:37 | INFO | FVGBOSTradingBot | [32mMT5 initialized successfully[0m
+2025-11-09 23:34:37 | INFO | FVGBOSTradingBot | Account: 5042090765 | Balance: $524.42
+2025-11-09 23:34:37 | INFO | RiskManager | [32m[DAILY RESET] Starting equity: $524.42[0m
+2025-11-09 23:34:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:34:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:34:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:35:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:35:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:35:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:36:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:36:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:36:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:37:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:37:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:37:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:38:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:38:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:38:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:39:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:39:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:39:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:40:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:40:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:40:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:41:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:41:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:41:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:42:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:42:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:42:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:43:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:43:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:43:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:44:37 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:44:37 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:44:37 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:44:41 | INFO | FVGBOSTradingBot | [33mBot stopped by user[0m
+2025-11-09 23:44:41 | INFO | FVGBOSTradingBot | MT5 connection closed
+2025-11-09 23:44:41 | INFO | FVGBOSTradingBot | [31mBot shutdown complete[0m
+2025-11-09 23:44:43 | INFO | FVGBOSTradingBot | [32m============================================================[0m
+2025-11-09 23:44:43 | INFO | FVGBOSTradingBot | [32mFVG-BOS TRADING BOT STARTED[0m
+2025-11-09 23:44:43 | INFO | FVGBOSTradingBot | [32m============================================================[0m
+2025-11-09 23:44:43 | INFO | FVGBOSTradingBot | [32mMT5 initialized successfully[0m
+2025-11-09 23:44:43 | INFO | FVGBOSTradingBot | Account: 5042090765 | Balance: $524.42
+2025-11-09 23:44:43 | INFO | RiskManager | [32m[DAILY RESET] Starting equity: $524.42[0m
+2025-11-09 23:44:43 | ERROR | DataHandler | Failed to fetch data for EURUSD#
+2025-11-09 23:44:43 | WARNING | DataHandler | Failed to update EURUSD# M15
+2025-11-09 23:44:43 | WARNING | FVGBOSTradingBot | Failed to update data
+2025-11-09 23:44:46 | INFO | FVGBOSTradingBot | [33mBot stopped by user[0m
+2025-11-09 23:44:46 | INFO | FVGBOSTradingBot | MT5 connection closed
+2025-11-09 23:44:46 | INFO | FVGBOSTradingBot | [31mBot shutdown complete[0m
